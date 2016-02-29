@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lumino - Panels</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/datepicker3.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+
+<!--Icons-->
+<script src="js/lumino.glyphs.js"></script>
+
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background-color:#ccc;border-color: #ccc;">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" style="margin-top:-20px;" href="#"><img src="../logo.png"></a>
+				<ul class="user-menu">
+					<li class="dropdown pull-right">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> User <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Profile</a></li>
+							<li><a href="#"><svg class="glyph stroked gear"><use xlink:href="#stroked-gear"></use></svg> Settings</a></li>
+							<li><a href="#"><svg class="glyph stroked cancel"><use xlink:href="#stroked-cancel"></use></svg> Logout</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+							
+		</div><!-- /.container-fluid -->
+	</nav>
+		
+	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+		<form role="search">
+			<div class="form-group">
+				<input type="text" class="form-control" placeholder="Search">
+			</div>
+		</form>
+		<ul class="nav menu">
+			<li class="active"><a href="index.html"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg> Dashboard</a></li>
+			<li class="parent">
+				<a href="#">
+					<span data-toggle="collapse" href="#users"><svg class="glyph stroked female user "><use xlink:href="#stroked-female-user"/></svg></span> Users 
+				</a>
+				<ul class="children collapse" id="users">
+					<li>
+						<a class="" href="#">
+							<svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg>Mike
+						</a>
+					</li>
+					<li>
+						<a class="" href="#">
+							<svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg>Zinny
+						</a>
+					</li>
+					<li>
+						<a class="" href="#">
+							<svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg>Anthony
+						</a>
+					</li>
+					<li>
+						<a class="" href="#">
+							<svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg>Busayomi
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li class="parent">
+				<a href="#">
+					<span data-toggle="collapse" href="#orders"><svg class="glyph stroked bag"><use xlink:href="#stroked-bag"></use></svg></span> Sales
+				</a>
+				<ul class="children collapse" id="orders">
+					<li>
+						<a class="" href="orders.html">
+							<svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg>Orders
+						</a>
+					</li>
+					<li>
+						<a class="" href="#">
+							<svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg>Invoices
+						</a>
+					</li>
+					<li>
+						<a class="" href="#">
+							<svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg>Shipments
+						</a>
+					</li>
+				</ul>
+			</li>
+			<!--<li><a href="#"><svg class="glyph stroked app-window"><use xlink:href=""></use></svg> List Orders</a></li>-->
+			<li class="parent">
+				<a href="#">
+					<span data-toggle="collapse" href="#product-items"><svg class="glyph stroked clipboard with paper"><use xlink:href="#stroked-clipboard-with-paper"/></svg></span> Products 
+				</a>
+				<ul class="children collapse" id="product-items">
+					<li>
+						<a class="" href="#">
+							<svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg>Product Category 
+						</a>
+					</li>
+					<li>
+						<a class="" href="#">
+							<svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> Add Product
+						</a>
+					</li>
+					<li>
+						<a class="" href="#">
+							<svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> Size Chart
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li><a href="#"><svg class="glyph stroked table"><use xlink:href="#stroked-table"></use></svg> Inventory</a></li>
+			<!--<li><a href="widgets.html"><svg class="glyph stroked calendar"><use xlink:href="#stroked-calendar"></use></svg> Widgets</a></li>-->
+			<li class="parent ">
+				<a href="#">
+					<span data-toggle="collapse" href="#sub-item-1"><svg class="glyph stroked open folder"><use xlink:href="#stroked-open-folder"/></svg></span> Reports
+				</a>
+				<ul class="children collapse" id="sub-item-1">
+					<li>
+						<a class="" href="#">
+							<svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> Shipping Method
+						</a>
+					</li>
+					<li>
+						<a class="" href="#">
+							<svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> Payment Method
+						</a>
+					</li>
+					<li>
+						<a class="" href="#">
+							<svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> Currencies
+						</a>
+					</li>
+				</ul>
+			</li>
+			<!--<li><a href="#"><svg class="glyph stroked line-graph"><use xlink:href="#stroked-line-graph"></use></svg> Products</a></li>-->
+			
+			
+			<!--<li><a href="forms.html"><svg class="glyph stroked pencil"><use xlink:href="#stroked-pencil"></use></svg> Product Upload</a></li>-->
+			
+			<!--<li><a href="icons.html"><svg class="glyph stroked star"><use xlink:href="#stroked-star"></use></svg> Icons</a></li>-->
+			
+			<li role="presentation" class="divider"></li>
+			<li><a href="login.html"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Login Page</a></li>
+		</ul>
+
+	</div><!--/.sidebar-->
+		
+	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main" id="order-info">			
+		<div class="row">
+			<ol class="breadcrumb">
+				<li><a href="#"><svg class="glyph stroked home"><use xlink:href="#stroked-home"></use></svg></a></li>
+				<li class="active">Order</li>
+			</ol>
+		</div><!--/.row-->
+		
+				<!--<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		OrderPAGE
+	</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<div class="container" >-->
+		<div class="row">
+		<h4>Order & Account Information</h4>
+		<hr>
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-xs-12">
+						<b>Order #0000123457(The order confirmation email is not sent)</b>
+					</div>
+					<div class="col-xs-12 row1">
+						Order Date	<span>Nov 18, 2015, 5:08:03 PM</span>
+					</div>
+					<div class="col-xs-12">
+						Order Status	<span>Pending</span>
+					</div>
+					<div class="col-xs-12 row1">
+						Purchased From	<span>Main Website</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-xs-12 row1">
+						<b>Account Information </b>
+					</div>
+					<div class="col-xs-12 row1">
+						Customer Name	<span>John Doe</span>
+					</div>
+					<div class="col-xs-12 ">
+						Email	<span>tohndoe@gmail.com</span>
+					</div>
+					<div class="col-xs-12 row1">
+						Customer Group	<span>General</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<h4>Address Information</h4>
+			<hr>
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-xs-12"><b>Billing Address <a href="#">Edit</a></b></div>
+					<div class="col-xs-12">
+						<address>
+						John Doe
+						No 12, SkyView Ogudu Road,<br> Ojota,Lagos,<br>Nigeria.<br>
+						T:(234)806234561 
+					</address>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-xs-12">
+						<b>Shipping Address <a href="#">Edit</a></b> 
+					</div>
+					<div class="col-xs-12">
+						<address>
+						John Doe
+						No 12, SkyView Ogudu Road,<br> Ojota,Lagos,<br> Nigeria.<br>
+						T:(234)806234561 
+					</address>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<h4>Payment & Shipping Method</h4>
+			<hr>
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-xs-12"><b>Payment Information</b></div>
+					<div class="col-xs-12">
+						Check / Money order<br>
+						The order was placed using &#8358;.
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-xs-12">
+						<b>Shipping & Handling Information</b> 
+					</div>
+					<div class="col-xs-12">
+						Flat Rate - Fixed &#8358;1000
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<h4>Items Ordered</h4>
+			<hr>
+			<div class="col-md-12">
+				<table class="table" style="background-color:transparent;">
+					<thead>
+						<tr>
+							<th>Product</th>
+							<th>Item Status</th>
+							<th>Original Price</th>
+							<th>Price</th>
+							<th>Qty</th>
+							<th>Subtotal</th>
+							<th>Tax Amount</th>
+							<th>Discount Amount</th>
+							<th>Row Total</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Minerva V-Tee-XS-White<br>SKU: WS08-XS-White</td>
+							<td>Pending</td>
+							<td>&#8358;3500</td>
+							<td>&#8358;5000</td>
+							<td>Ordered	&nbsp;1
+								<br>Invoiced &nbsp;1
+								<br>Shipped &nbsp;	1
+							</td>
+							<td>&#8358;5000</td>
+							<td>&#8358;250</td>
+							<td>&#8358;0.00</td>
+							<td>&#8358;5000</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="row">
+			<h4>Order Total</h4>
+			<hr>
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-xs-12"><b>Notes for this Order</b></div>
+					<div class="col-xs-12">
+						<form class="form">
+							<div class="form-group">
+								<label class="control-label">Status</label>
+								 <div class="input-group">
+								      <input type="text" class="form-control" value="Pending" aria-label="..." style="width:30%;">
+								      <div class="input-group-btn">
+								        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret pull-left" style="margin-left:-20px;"></span></button>
+								        <ul class="dropdown-menu dropdown-menu-right">
+								          <li><a href="#">Completed</a></li>
+								          <li><a href="#">Cancelled</a></li>
+								          <li><a href="#">Pending</a></li>
+								        </ul>
+								      </div><!-- /btn-group -->
+								  </div>
+							</div>
+							<div class="form-group">
+								<label>Comment</label>
+								<textarea class="form-control" rows="6" cols="4"></textarea>
+							</div>
+							<!--<div class="form-group col-xs-8">
+								<input type="checkbox" class="form-control col-xs-3">
+								<label class="col-xs-5">Notify customer by email</label>
+							</div>-->
+							<p>
+							<button type="button" class="btn btn-primary">Submit Comment</button></p>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-xs-12">
+						<b>Order Totals</b> 
+					</div>
+					<div class="col-xs-12">
+						Subtotal	<span>&#8358;5000.00</span><br>
+						Shipping & Handling	<span>&#8358;250.00</span><br>
+						<hr>
+						Grand Total	<span>&#8358;5000.00</span><br>
+						Total Paid	<span>&#8358;5000.00</span><br>
+						Total Refunded	<span>&#8358;0.00</span><br>
+						<b>Total Due<span>&#8358;5000.00</span></b>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap-table.js"></script>
+</body>
+</html>
+		
+	</div><!--/.main-->
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/chart.min.js"></script>
+	<script src="js/chart-data.js"></script>
+	<script src="js/easypiechart.js"></script>
+	<script src="js/easypiechart-data.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script>
+		!function ($) {
+			$(document).on("click","ul.nav li.parent > a > span.icon", function(){		  
+				$(this).find('em:first').toggleClass("glyphicon-minus");	  
+			}); 
+			$(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
+		}(window.jQuery);
+
+		$(window).on('resize', function () {
+		  if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
+		})
+		$(window).on('resize', function () {
+		  if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
+		})
+	</script>	
+</body>
+
+</html>

@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> ::: Third Party Insurance ::</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/datepicker3.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+
+<!--Icons-->
+<script src="js/lumino.glyphs.js"></script>
+
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><span> IAAG </span>Admin</a>
+				<ul class="user-menu">
+					<li class="dropdown pull-right">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> User <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Profile</a></li>
+							<li><a href="#"><svg class="glyph stroked gear"><use xlink:href="#stroked-gear"></use></svg> Settings</a></li>
+							<li><a href="#"><svg class="glyph stroked cancel"><use xlink:href="#stroked-cancel"></use></svg> Logout</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+							
+		</div><!-- /.container-fluid -->
+	</nav>
+		
+	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+		<form role="search">
+			<div class="form-group">
+				<input type="text" class="form-control" placeholder="Search">
+			</div>
+		</form>
+		<ul class="nav menu">
+			<li><a href="index.html"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg> Dashboard</a></li>
+			
+			<li class="active"><a href="forms.html"><svg class="glyph stroked pencil"><use xlink:href="#stroked-pencil"></use></svg> Third Party Insurance</a></li>
+
+			<!--<li><a href="widgets.html"><svg class="glyph stroked calendar"><use xlink:href="#stroked-calendar"></use></svg> Widgets</a></li>
+			<li><a href="charts.html"><svg class="glyph stroked line-graph"><use xlink:href="#stroked-line-graph"></use></svg> Charts</a></li>
+			<li><a href="tables.html"><svg class="glyph stroked table"><use xlink:href="#stroked-table"></use></svg> Tables</a></li>
+
+			<li><a href="panels.html"><svg class="glyph stroked app-window"><use xlink:href="#stroked-app-window"></use></svg> Alerts &amp; Panels</a></li>
+			<li><a href="icons.html"><svg class="glyph stroked star"><use xlink:href="#stroked-star"></use></svg> Icons</a></li>-->
+			<li class="parent ">
+				<a href="#">
+					<span data-toggle="collapse" href="#sub-item-1"><svg class="glyph stroked chevron-down"><use xlink:href="#stroked-chevron-down"></use></svg></span> Dropdown 
+				</a>
+				<ul class="children collapse" id="sub-item-1">
+					<li>
+						<a class="" href="#">
+							<svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> Sub Item 1
+						</a>
+					</li>
+					<li>
+						<a class="" href="#">
+							<svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> Sub Item 2
+						</a>
+					</li>
+					<li>
+						<a class="" href="#">
+							<svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> Sub Item 3
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li role="presentation" class="divider"></li>
+			<!--<li><a href="login.html"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Login Page</a></li>-->
+		</ul>
+
+	</div><!--/.sidebar-->
+		
+	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">			
+		<div class="row">
+			<ol class="breadcrumb">
+				<li><a href="#"><svg class="glyph stroked home"><use xlink:href="#stroked-home"></use></svg></a></li>
+				<li class="active">Icons</li>
+			</ol>
+		</div><!--/.row-->
+		
+		<div class="row">
+			<div class="col-lg-12">
+				<h1 class="page-header"> Third party insurance  </h1>
+			</div>
+		</div><!--/.row-->
+				
+		
+		<div class="row">
+			<div class="col-lg-12">
+
+				<div class="panel panel-default">
+
+					<div class="panel-heading"> Personal Information  </div>
+
+
+					<div class="panel-body">
+						<div class="col-md-6">
+							<form role="form">
+
+
+
+							<div class="form-group">
+									<label>Title </label>
+									<select class="form-control">
+									<option value="0">  :: SELECT ::  </option>
+									<option value="1">N/A</option>
+									<option value="2">Miss.</option>
+									<option value="3">Mr.</option>
+									<option value="4">Mr. &amp; Mrs.</option>
+									<option value="5">Mrs.</option>
+							    </select>
+							</div>
+							
+
+
+							<div class="form-group">
+									<label>Surname Name </label>
+									<input class="form-control" placeholder="Placeholder">
+								</div>
+
+								<div class="form-group">
+									<label>First Name</label>
+									<input class="form-control" placeholder="Placeholder">
+								</div>
+
+								<div class="form-group">
+									<label>Other Names: </label>
+									<input class="form-control" placeholder="Placeholder">
+								</div>
+
+
+
+
+								<label>Gender</label>
+									<select class="form-control">
+									<option value="0">  :: SELECT ::  </option>
+									<option value="1">Female</option>
+									<option value="2">Male</option>
+							    </select>
+
+
+
+<!-- Contact -->
+
+
+<h3 class="page-header"> Contact Information </h3>
+
+
+								<div class="form-group">
+									<label> Address </label>
+									<textarea class="form-control" rows="3"></textarea>
+								</div>
+
+
+
+								<div class="form-group">
+									<label> 
+								State:*  </label>
+									<select class="form-control">
+									<option value="0">  :: SELECT ::  </option>
+									<option value="6">Abia</option>
+									<option value="7">Adamawa</option>
+									<option value="8">Akwa Ibom</option>
+									<option value="9">Anambra</option>
+									<option value="10">Bauchi</option>
+									<option value="11">Bayelsa</option>
+									<option value="12">Benue</option>
+									<option value="13">Bornu</option>
+									<option value="14">Cross River&#160;</option>
+									<option value="15">Delta</option>
+									<option value="16">Ebonyi&#160;</option>
+									<option value="17">Edo</option>
+									<option value="18">Ekiti</option>
+									<option value="19">Enugu</option>
+									<option value="5">Federal Capital Territory</option>
+									<option value="42">Foreign Offices</option>
+									<option value="20">Gombe</option>
+									<option value="21">Imo</option>
+									<option value="22">Jigawa</option>
+									<option value="23">Kaduna</option>
+									<option value="24">Kano</option>
+									<option value="25">Katsina</option>
+									<option value="26">Kebbi</option>
+									<option value="27">Kogi</option>
+									<option value="28">Kwara</option>
+									<option value="29">Lagos</option>
+									<option value="30">Nasarawa</option>
+									<option value="31">Niger</option>
+									<option value="32">Ogun</option>
+									<option value="33">Ondo</option>
+									<option value="34">Osun</option>
+									<option value="35">Oyo</option>
+									<option value="36">Plateau</option>
+									<option value="37">Rivers</option>
+									<option value="38">Sokoto</option>
+									<option value="39">Taraba</option>
+									<option value="40">Yobe</option>
+									<option value="41">Zamfara</option>
+
+							    </select>
+							</div>
+
+
+
+						<div class="form-group">
+									<label> LGA:  </label>
+									<select class="form-control">
+									<option value="0">  :: SELECT ::  </option>
+									<option value="1">N/A</option>
+							    </select>
+							</div>
+
+						<div class="form-group">
+									<label>Mobile No: </label>
+									<input class="form-control" placeholder="Placeholder">
+								</div>
+
+
+
+
+									
+
+
+
+<h3 class="page-header">  Vehicle Information</h3>
+
+							<div class="form-group">
+									<lable> Make of Vehicle: </label>
+									<select class="form-control">
+									<option value="0">  :: SELECT ::  </option>
+									<option value="182">ABG</option>
+									<option value="938">Abraman</option>
+									<option value="1009">ACURA</option>
+									<option value="1006">Acura Legend</option>
+									<option value="196">Agusta</option>
+									<option value="7">Alfa Romeo</option>
+									<option value="942">American</option>
+									<option value="213">AMV</option>
+									<option value="145">Angaram</option>
+									<option value="9999">As Attached</option>
+									<option value="152">Ashok Leyland</option>
+									<option value="106">Asia</option>
+									<option value="1011">Aston Martin</option>
+									<option value="219">Astra</option>
+									<option value="950">Atlas</option>
+									<option value="5">Audi</option>
+									<option value="72">Autocar</option>
+									<option value="85">Awandeki</option>
+									<option value="105">B&amp;H</option>
+									<option value="139">Back Hoe Loader</option>
+									<option value="155">Bajaj</option>
+									<option value="131">Bamil</option>
+									<option value="166">Bar Ford</option>
+									<option value="948">Bar Leet</option>
+									<option value="214">Barber</option>
+									<option value="67">Bedford</option>
+									<option value="972">Beitli</option>
+									<option value="134">Bently</option>
+									<option value="86">Biti Bon</option>
+									<option value="40">Black</option>
+									<option value="160">BMC</option>
+									<option value="3">BMW</option>
+									<option value="119">Bobcat</option>
+									<option value="81">BobCat</option>
+									<option value="976">Bomag</option>
+									<option value="116">Bonat</option>
+									<option value="1028">BRILLIANCE</option>
+									<option value="1014">Brilliance Grandor</option>
+									<option value="203">Bros</option>
+									<option value="178">Brutone</option>
+									<option value="132">Bucher Duro</option>
+									<option value="22">Buik</option>
+									<option value="130">Bukleen</option>
+									<option value="13">Caddillac</option>
+									<option value="217">Cagiva</option>
+									<option value="176">Cantak</option>
+									<option value="193">Case Poelain</option>
+									<option value="117">Cat</option>
+									<option value="46">Caterpeler</option>
+									<option value="208">Ceat</option>
+									<option value="69">Champion</option>
+									<option value="1003">Cherry</option>
+									<option value="12">Chevrolet</option>
+									<option value="30">Chrysler</option>
+									<option value="31">Citroen</option>
+									<option value="198">Clark</option>
+									<option value="136">Cobilco</option>
+									<option value="1032">COMMANDER</option>
+									<option value="76">Copelco</option>
+									<option value="157">Corvette</option>
+									<option value="179">Cumestar</option>
+									<option value="1004">Dacia Logan</option>
+									<option value="47">Daewoo</option>
+									<option value="127">DAF</option>
+									<option value="43">Daihatsu</option>
+									<option value="98">Daimber</option>
+									<option value="104">Daniapac</option>
+									<option value="48">Datsun</option>
+									<option value="968">Dayabak</option>
+									<option value="234">DB</option>
+									<option value="233">DB/Actros</option>
+									<option value="944">Demal</option>
+									<option value="236">Deutz-Fahr</option>
+									<option value="77">Dinamac</option>
+									<option value="88">Dinbak</option>
+									<option value="966">Dirlink</option>
+									<option value="171">Ditch Witch</option>
+									<option value="25">Dodge</option>
+									<option value="1015">DONG FENG</option>
+									<option value="115">donk</option>
+									<option value="969">Draier</option>
+									<option value="128">Ducati</option>
+									<option value="1027">DUP TIPPER</option>
+									<option value="189">Duro</option>
+									<option value="205">Dutton</option>
+									<option value="124">Dynapac</option>
+									<option value="168">Dyoo</option>
+									<option value="126">Eicher</option>
+									<option value="153">Enfield</option>
+									<option value="163">Engersol</option>
+									<option value="970">Engram</option>
+									<option value="230">ENVINITY</option>
+									<option value="154">Escorts</option>
+									<option value="239">FABIA</option>
+									<option value="73">Farmer</option>
+									<option value="159">Faw</option>
+									<option value="89">Fay</option>
+									<option value="51">Ferrari</option>
+									<option value="50">Fiat</option>
+									<option value="91">Fiouzo</option>
+									<option value="241">FLORID</option>
+									<option value="23">Ford</option>
+									<option value="224">Forokowa</option>
+									<option value="227">Forotwa</option>
+									<option value="1010">FOTON</option>
+									<option value="197">fujli</option>
+									<option value="143">Fuzuo</option>
+									<option value="1013">Geely</option>
+									<option value="45">GMC</option>
+									<option value="1025">GONOW</option>
+									<option value="1007">Grand Cherokee</option>
+									<option value="1023">GREATWALL</option>
+									<option value="83">Grove</option>
+									<option value="1029">Haima 3</option>
+									<option value="183">HAM</option>
+									<option value="38">Harley Davidson</option>
+									<option value="122">Hasberg</option>
+									<option value="999">Haystar</option>
+									<option value="998">Heavy Loader</option>
+									<option value="56">Heeno</option>
+									<option value="148">Hero Honda</option>
+									<option value="37">Hino</option>
+									<option value="82">Hitachi</option>
+									<option value="18">Honda</option>
+									<option value="144">Hoze</option>
+									<option value="146">Hummer</option>
+									<option value="120">Hyster</option>
+									<option value="21">Hyundai</option>
+									<option value="1008">Infinity</option>
+									<option value="1022">Innson</option>
+									<option value="92">International</option>
+									<option value="24">Isuzu</option>
+									<option value="35">Iveco</option>
+									<option value="95">Iylose</option>
+									<option value="65">J.C.B</option>
+									<option value="1031">JAC</option>
+									<option value="20">Jaguar</option>
+									<option value="235">JCB</option>
+									<option value="9">Jeep</option>
+									<option value="129">Jenbi</option>
+									<option value="1002">Jincheng</option>
+									<option value="121">JMC</option>
+									<option value="170">Johndeere</option>
+									<option value="975">Jrdeer</option>
+									<option value="960">KA</option>
+									<option value="215">Kamaz</option>
+									<option value="207">Kano</option>
+									<option value="111">Kanworth</option>
+									<option value="133">Karaz</option>
+									<option value="108">Karosa</option>
+									<option value="125">Kato</option>
+									<option value="96">Kawazaki</option>
+									<option value="973">Kayes</option>
+									<option value="55">Kia</option>
+									<option value="175">King</option>
+									<option value="974">Kinwar</option>
+									<option value="962">KO</option>
+									<option value="167">Kopelco</option>
+									<option value="74">Koumatsu</option>
+									<option value="101">Kraislar</option>
+									<option value="161">KTM</option>
+									<option value="49">Lamborghini</option>
+									<option value="141">Lancia</option>
+									<option value="42">Land Rover</option>
+									<option value="78">Land Rover.</option>
+									<option value="79">Lanker Pousy</option>
+									<option value="87">Lebhair</option>
+									<option value="63">Leland</option>
+									<option value="64">Leland</option>
+									<option value="8">Lexus</option>
+									<option value="238">LIBERTY</option>
+									<option value="192">Liebherr</option>
+									<option value="1018">Lifan</option>
+									<option value="1021">Lincoln</option>
+									<option value="114">Lodar</option>
+									<option value="997">Lord Lakho</option>
+									<option value="66">Loren</option>
+									<option value="967">Lourain</option>
+									<option value="140">Mack</option>
+									<option value="177">Mafy</option>
+									<option value="1012">Mahindra Scorpio</option>
+									<option value="61">Majros</option>
+									<option value="80">Makalak</option>
+									<option value="52">Man</option>
+									<option value="212">Manitowoc</option>
+									<option value="222">Manu</option>
+									<option value="200">Many Talk</option>
+									<option value="201">Mariny</option>
+									<option value="68">Marmoon</option>
+									<option value="109">Marmoon</option>
+									<option value="184">MARON</option>
+									<option value="220">Masi Frigson</option>
+									<option value="209">Mazaratti</option>
+									<option value="27">Mazda</option>
+									<option value="4">Mercedes</option>
+									<option value="1001">Mercury</option>
+									<option value="959">MF</option>
+									<option value="980">MINI COOPER</option>
+									<option value="54">Mitac</option>
+									<option value="17">Mitsubishi</option>
+									<option value="977">Mixer</option>
+									<option value="232">Montero</option>
+									<option value="971">Motorcycle</option>
+									<option value="210">Newhold</option>
+									<option value="158">Nikken</option>
+									<option value="1">Nissan</option>
+									<option value="186">Norinco</option>
+									<option value="59">OCA</option>
+									<option value="60">Oldsmobile</option>
+									<option value="6">Opel</option>
+									<option value="39">Opel</option>
+									<option value="57">Orvan</option>
+									<option value="58">Oshkosh</option>
+									<option value="102">Oskar</option>
+									<option value="110">Osten</option>
+									<option value="194">P&amp;H</option>
+									<option value="187">Pal</option>
+									<option value="1016">PEDDLER</option>
+									<option value="28">Peugeot</option>
+									<option value="218">Polaris</option>
+									<option value="29">Pontiac</option>
+									<option value="70">Porshe</option>
+									<option value="231">Power Broom</option>
+									<option value="216">PPM</option>
+									<option value="150">Premier</option>
+									<option value="174">Prenderup</option>
+									<option value="147">Proton</option>
+									<option value="191">Putzmeinster</option>
+									<option value="62">Raba</option>
+									<option value="11">Range Rover</option>
+									<option value="165">Ranjo</option>
+									<option value="945">Raston</option>
+									<option value="211">Raygo Wagner</option>
+									<option value="10">Renault</option>
+									<option value="1024">REXTON</option>
+									<option value="181">Rocky</option>
+									<option value="53">Rols Royce</option>
+									<option value="169">Rover</option>
+									<option value="36">Saab</option>
+									<option value="185">Samsung</option>
+									<option value="979">SANDERSON</option>
+									<option value="33">Sang Young</option>
+									<option value="1026">SATURN</option>
+									<option value="44">Scania</option>
+									<option value="237">Schmitz</option>
+									<option value="190">Schwing</option>
+									<option value="981">SCOORD VLYSYA</option>
+									<option value="41">Seat</option>
+									<option value="250">SEDDON</option>
+									<option value="978">Sela</option>
+									<option value="963">SHMBEYON</option>
+									<option value="1017">SINOTRUCK</option>
+									<option value="936">Skaiya</option>
+									<option value="137">Skoda</option>
+									<option value="173">Smart</option>
+									<option value="965">SOW</option>
+									<option value="1030">SSANGYONG ACTYON</option>
+									<option value="123">Ssanyong Musso</option>
+									<option value="100">Stalowala</option>
+									<option value="112">Stavstroj</option>
+									<option value="97">Steyr Daimler P</option>
+									<option value="15">Subaru</option>
+									<option value="14">Suzuki</option>
+									<option value="71">Suzuki.</option>
+									<option value="94">Tadano</option>
+									<option value="204">Tadano</option>
+									<option value="195">TAM</option>
+									<option value="19">Tata</option>
+									<option value="964">Tater Aloy</option>
+									<option value="32">Tatra</option>
+									<option value="996">TCM</option>
+									<option value="929">TDA</option>
+									<option value="228">Tenant</option>
+									<option value="107">Terberg</option>
+									<option value="226">Thwaites</option>
+									<option value="206">Tiger</option>
+									<option value="1020">TITAN</option>
+									<option value="188">Titan Goldhofer</option>
+									<option value="2">Toyota</option>
+									<option value="180">Tractor</option>
+									<option value="931">Tramas</option>
+									<option value="103">Trans</option>
+									<option value="223">Triump Adventure</option>
+									<option value="225">Triumph</option>
+									<option value="149">Turberge</option>
+									<option value="118">Twitis</option>
+									<option value="138">Uni Loader</option>
+									<option value="1000">UTILITY REFRIG</option>
+									<option value="229">UTILITY REFRIG.</option>
+									<option value="26">Valkouri</option>
+									<option value="135">Van</option>
+									<option value="93">Varco</option>
+									<option value="202">Virtgen</option>
+									<option value="16">Volkswagen</option>
+									<option value="34">Volvo</option>
+									<option value="142">Woyang</option>
+									<option value="1005">Wrangler Jeep</option>
+									<option value="242">Wuling</option>
+									<option value="1019">XINKAI</option>
+									<option value="113">Yajeen</option>
+									<option value="199">Yakaco</option>
+									<option value="151">Yamaha</option>
+									<option value="156">Yezdi</option>
+									<option value="221">Yogen</option>
+									<option value="90">YUJIN</option>
+									<option value="982">Z-Auto Admiral</option>
+									<option value="162">Zelekesion</option>
+									<option value="240">ZOYTE</option>
+
+
+							    </select>
+							</div>	
+
+
+							
+									<div class="form-group">
+																		<label> Model of Vehicle:</label>
+																		<input class="form-control" placeholder="Placeholder">
+														     			</div>
+									
+									<div class="form-group">
+																		<label> Engine Number: </label>
+																		<input class="form-control" placeholder="Placeholder">
+																	</div>
+
+
+						<h3 class="page-header"> Get Quote </h3>
+							<div class="form-group">
+									<label> Select Premium:*   </label>
+									<select class="form-control">
+									<option value="0">  :: SELECT ::  </option>
+									<option value="1">Saloon Car</option>
+									<option value="2">Mini Bus</option>
+									<option value="3">Trucks</option>
+									<option value="4">SUV</option>
+
+
+							    </select>
+							</div>
+
+							Premium: 
+
+
+								<!-- contact -->
+
+
+								
+
+						<!-- personal info Ends -->
+										
+
+							<!--	<div class="form-group">
+									<label>Password</label>
+									<input type="password" class="form-control">
+								</div>
+								
+								<div class="form-group checkbox">
+								  <label>
+								    <input type="checkbox">Remember me</label>
+								</div> -->
+																
+								
+								
+								
+								
+							<!--	<label>Validation</label>
+								<div class="form-group has-success">
+									<input class="form-control" placeholder="Success">
+								</div>
+								<div class="form-group has-warning">
+									<input class="form-control" placeholder="Warning">
+								</div>
+								<div class="form-group has-error">
+									<input class="form-control" placeholder="Error">
+								</div>-->
+								
+							</div> 
+						
+
+
+<!-- personal info start -->
+
+							<div class="col-md-6">
+							
+								
+
+
+								<div class="form-group">
+									<label>Date of Birth</label>
+									<input class="form-control" placeholder="Placeholder">
+								</div>
+													
+
+							
+
+							<div class="form-group">
+									<label>Marital Status </label>
+									<select class="form-control">
+									<option value="0">  :: SELECT ::  </option>
+									<option value="1">N/A</option>
+									<option value="2">Divorced</option>
+									<option value="3">Married</option>
+									<option value="4">Single</option>
+									<option value="5">Widowed</option>
+							    </select>
+							</div>
+
+
+
+
+
+								<div class="form-group">
+									<label> Religion  </label>
+									<select class="form-control">
+									<option value="0">  :: SELECT ::  </option>
+									<option value="1">N/A</option>
+									<option value="2">Christian</option>
+									<option value="3">Muslim</option>
+									<option value="4">Others</option>
+
+							    </select>
+							</div>
+
+
+
+
+							<div class="form-group">
+									<label> Occupation </label>
+									<select class="form-control">
+									<option value="0">  :: SELECT ::  </option>
+									<option value="1">N/A</option>
+									<option value="2">Banking</option>
+									<option value="3">Construction/Building</option>
+									<option value="4">Engineering</option>
+									<option value="5">Insurance and Financial Services</option>
+									<option value="6">Manufacturer</option>
+									<option value="7">Mining</option>
+									<option value="8">Telecommunications</option>
+							    </select>
+							</div>
+
+
+
+
+								<div class="form-group">
+									<label>Email Address: </label>
+									<input class="form-control" placeholder="Placeholder">
+								</div>
+
+
+
+
+<h3 class="page-header"> . </h3>
+
+
+
+
+<div class="form-group">
+									<label> Nationality:   </label>
+									<select class="form-control">
+									<option value="0">  :: SELECT ::  </option>
+									<option value="31">AFGHANISTAN</option>
+		<option value="20">ALGERIA</option>
+		<option value="10">BAHRAIN</option>
+		<option value="28">BURKINAFASO</option>
+		<option value="22">CANADA</option>
+		<option value="27">CHAD</option>
+		<option value="40">DJIBOUTI</option>
+		<option value="2">EGYPT</option>
+		<option value="23">ERITREA</option>
+		<option value="26">ETHIOPIA</option>
+		<option value="72">GERMANY</option>
+		<option value="33">GHANA</option>
+		<option value="36">GUINEA</option>
+		<option value="14">IRAQ</option>
+		<option value="9">IRELAND</option>
+		<option value="11">KUWAIT</option>
+		<option value="12">LEBANON</option>
+		<option value="24">LIBYA</option>
+		<option value="37">MALAYSIA</option>
+		<option value="41">MALTA</option>
+		<option value="32">MAURITIUS</option>
+		<option value="19">MOROCCO</option>
+		<option value="39">NEPAL</option>
+		<option value="1">NIGERIA</option>
+		<option value="15">OMAN</option>
+		<option value="17">OTHER</option>
+		<option value="30">PAKISTAN</option>
+		<option value="7">PALESTINE</option>
+		<option value="5">QATAR</option>
+		<option value="38">RUSSIA</option>
+		<option value="3">SAUDI ARABIA</option>
+		<option value="35">SOMALIA</option>
+		<option value="13">SUDAN</option>
+		<option value="4">SYRIA</option>
+		<option value="18">TUNISIA</option>
+		<option value="6">UAE</option>
+		<option value="42">UGANDA</option>
+		<option value="67">USA</option>
+		<option value="8">YEMEN</option>
+		<option value="43">ZAMBIA</option>
+
+							    </select>
+							</div>
+
+
+
+
+
+					<div class="form-group">
+									<label>	Identification Type  </label>
+									<select class="form-control">
+									<option value="0">  :: SELECT ::  </option>
+									<option value="6">BIRTH CERTIFICATE</option>
+									<option value="5">DRIVER LICENSE</option>
+									<option value="2">IDENTIFICATION CARD</option>
+									<option value="1">INTERNATIONAL PASSPORT</option>
+		   
+							    </select>
+							</div>
+
+
+
+
+<div class="form-group">
+									<label> Identification No:  </label>
+										<input class="form-control" placeholder="Placeholder">
+									</div>
+
+
+<div class="form-group">
+									
+								<div class="form-group">
+									<label> Upload copy of Id :  Choose File</label>
+									<input type="file">
+									 <p class="help-block"> Image only  </p>
+								</div>
+
+<h3 class="page-header">  . </h3> <br>
+
+
+
+									 
+									<div class="form-group">
+																		<label> Chassis Number: </label>
+																		<input class="form-control" placeholder="Placeholder">
+																	</div>
+									
+									<div class="form-group">
+																		<label> Registration Number: </label>
+																		<input class="form-control" placeholder="Placeholder">
+																	</div>
+									
+									<div class="form-group">
+																		<label> Year of make (Format:YYYY): </label>
+																		<input class="form-control" placeholder="Placeholder">
+																	</div>
+
+																		</select>
+																	</div>
+								
+								
+								
+								
+								<button type="reset" class="btn btn-default">Reset </button>
+								<button type="submit" class="btn btn-primary">Submit </button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div><!-- /.col-->
+		</div><!-- /.row -->
+		
+	</div><!--/.main-->
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/chart.min.js"></script>
+	<script src="js/chart-data.js"></script>
+	<script src="js/easypiechart.js"></script>
+	<script src="js/easypiechart-data.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script>
+		!function ($) {
+			$(document).on("click","ul.nav li.parent > a > span.icon", function(){		  
+				$(this).find('em:first').toggleClass("glyphicon-minus");	  
+			}); 
+			$(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
+		}(window.jQuery);
+
+		$(window).on('resize', function () {
+		  if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
+		})
+		$(window).on('resize', function () {
+		  if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
+		})
+	</script>	
+</body>
+
+</html>
